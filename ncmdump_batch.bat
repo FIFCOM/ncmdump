@@ -1,23 +1,3 @@
-@ECHO OFF
-REM  QBFC Project Options Begin
-REM  HasVersionInfo: No
-REM Companyname: 
-REM Productname: 
-REM Filedescription: 
-REM Copyrights: 
-REM Trademarks: 
-REM Originalname: 
-REM Comments: 
-REM Productversion:  0. 0. 0. 0
-REM Fileversion:  0. 0. 0. 0
-REM Internalname: 
-REM ExeType: console
-REM Architecture: x64
-REM Appicon: 
-REM AdministratorManifest: No
-REM Embeddedfile: E:\DevelopFiles\ncmdump\kernel.exe
-REM  QBFC Project Options End
-@ECHO ON
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
 title .NCM Dump for Batch - By FIFCOM
@@ -31,7 +11,7 @@ echo.      .NCM Dump for Batch - By FIFCOM
 echo.   ___________________________________________________________
 echo.
 echo.
-echo.      ±¾¹¤¾ß»ùÓÚ¿ªÔ´ÏîÄ¿:
+echo.      æœ¬å·¥å…·åŸºäºŽå¼€æºé¡¹ç›®:
 echo.
 echo.      https://github.com/anonymous5l/ncmdump
 echo.
@@ -39,13 +19,13 @@ echo.      https://github.com/yoki123/ncmdump
 echo.
 echo.      https://github.com/FIFCOM/ncmdump
 echo.
-echo.      Ê¹ÓÃ·½·¨:
+echo.      ä½¿ç”¨æ–¹æ³•:
 echo.
-echo.      1.½«±¾³ÌÐò·ÅÔÚ°üº¬.ncmÎÄ¼þµÄÎÄ¼þ¼ÐÏÂ
+echo.      1.å°†æœ¬ç¨‹åºæ”¾åœ¨åŒ…å«.ncmæ–‡ä»¶çš„æ–‡ä»¶å¤¹ä¸‹
 echo.
-echo.      2.Ñ¡ÔñÄ£Ê½²¢¿ªÊ¼×ª»»
+echo.      2.é€‰æ‹©æ¨¡å¼å¹¶å¼€å§‹è½¬æ¢
 echo.
-echo.      °´ÈÎÒâ¼üÑ¡Ôñ×ª»»Ä£Ê½...
+echo.      æŒ‰ä»»æ„é”®é€‰æ‹©è½¬æ¢æ¨¡å¼...
 pause>nul
 goto mode
 
@@ -56,14 +36,14 @@ echo.      .NCM Dump for Batch - By FIFCOM
 echo.   ___________________________________________________________
 echo.
 echo.
-echo.      ÇëÑ¡Ôñ×ª»»Ä£Ê½:
+echo.      è¯·é€‰æ‹©è½¬æ¢æ¨¡å¼:
 echo.
-echo.      1. ×ª»»Îª.mp3 ²¢É¾³ý.ncmÎÄ¼þ
+echo.      1. è½¬æ¢ä¸º.mp3 å¹¶åˆ é™¤.ncmæ–‡ä»¶
 echo.
-echo.      2. ½ö×ª»»Îª.mp3 ²»É¾³ý.ncmÎÄ¼þ
+echo.      2. ä»…è½¬æ¢ä¸º.mp3 ä¸åˆ é™¤.ncmæ–‡ä»¶
 echo.
 set mode_select=0
-Set /p mode_select=       ÇëÊäÈëÐòºÅ:
+Set /p mode_select=       è¯·è¾“å…¥åºå·:
 
 If "%mode_select%"=="1" goto mode_1
 If "%mode_select%"=="2" goto mode_2
@@ -76,9 +56,9 @@ for /r %%i in (*.ncm) do (
 kernel.exe "%%i" && del "%%i"
 )
 echo.
-echo. ÒÑÈ«²¿×ª»»Íê³É,²¢É¾³ýÁËËùÓÐµÄ.ncmÎÄ¼þ
+echo. å·²å…¨éƒ¨è½¬æ¢å®Œæˆ,å¹¶åˆ é™¤äº†æ‰€æœ‰çš„.ncmæ–‡ä»¶
 echo.
-echo. °´ÈÎÒâ¼üÍË³ö³ÌÐò...
+echo. æŒ‰ä»»æ„é”®é€€å‡ºç¨‹åº...
 pause>nul
 exit
 
@@ -88,8 +68,8 @@ for /r %%i in (*.ncm) do (
 kernel.exe "%%i"
 )
 echo.
-echo. ÒÑÈ«²¿×ª»»Íê³É
+echo. å·²å…¨éƒ¨è½¬æ¢å®Œæˆ
 echo.
-echo. °´ÈÎÒâ¼üÍË³ö³ÌÐò...
+echo. æŒ‰ä»»æ„é”®é€€å‡ºç¨‹åº...
 pause>nul
 exit
